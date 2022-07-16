@@ -5,15 +5,17 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
-	height: 100vh;
 	font-family: var(--main-font);
 }
 
 .wrapper {
 	max-width: 550px;
+	width: 100%;
+	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 	margin: 0 auto;
 	padding: 50px;
 }
@@ -39,6 +41,10 @@ h1 {
 	text-align: center;
 }
 
+.content__box img {
+	width: 100%;
+}
+
 .button a {
 	display: block;
 	width: 75%;
@@ -51,7 +57,7 @@ h1 {
 }
 
 /*Footer Section*/
-.socials-link__box a i {
+.fa-brands {
 	text-align: center;
 	border-radius: 90px;
 	border: 1px solid var(--text-primary);
