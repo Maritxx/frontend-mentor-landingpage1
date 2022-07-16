@@ -62,7 +62,7 @@ header img {
 	margin: 0 auto;
 	padding: 10px 0px;
 	font-family: var(--button-font);
-	font-weight: 400
+	font-weight: 400;
 	color: var(--content-primary);
 	background-color: var(--text-primary);
 	border-radius: 20px;
@@ -97,5 +97,34 @@ footer {
 
 	header, footer {
 	max-width: 1200px;
+	}
+
+	.landing-page {
+	display: flex;
+	}
+
+	.content__box {
+	text-align: left;
+	flex: 0 1 50%;
+	}
+
+	.content__box:first-child {
+	padding-right: 40px;
+	}
+
+	.button a {
+		margin-left: 0;
+		width: 200px;
+	}
+
+	.fa-brands, .fa-solid {
+		font-size: 1.2rem;
+		width: 40px;
+		height: 40px;
+		padding: 10px;
+	}
+
+	footer {
+		justify-content: flex-end;
 	}
 }
