@@ -125,10 +125,12 @@ footer {
 	.content__box {
 	text-align: left;
 	flex: 0 1 40%;
+	padding-top: 50px;
 	}
 
 	.content__box:first-child {
 	padding-right: 40px;
+	padding-top: 0px;
 	flex: 0 1 60%;
 	}
 
