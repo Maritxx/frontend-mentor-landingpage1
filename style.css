@@ -75,7 +75,7 @@ header img {
 
 .button a:hover {
 	color: var(--text-primary);
-	background-color: var(--content-secondary);
+	background-color: var(--active-primary);
 }
 
 /*Footer Section*/
@@ -99,8 +99,8 @@ footer {
 }
 
 .fa-brands:hover, .fa-solid:hover {
-	color: var(--content-secondary);
-	border: 1px solid var(--content-secondary);
+	color: var(--active-primary);
+	border: 1px solid var(--active-primary);
 }
 
 
