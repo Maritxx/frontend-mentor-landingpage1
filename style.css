@@ -22,12 +22,13 @@ header, footer {
 	height: 100px;
 	max-width: 550px;
 	padding: 40px;
+	margin: 0 auto;
 }
 
 
 /*Font Styles*/
 h1 {
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 	font-weight: 600;
 	color: var(--text-primary);
 }
@@ -60,12 +61,13 @@ header img {
 	display: block;
 	width: 75%;
 	margin: 0 auto;
-	padding: 10px 0px;
+	padding: 15px 0px;
 	font-family: var(--button-font);
 	font-weight: 400;
 	color: var(--content-primary);
 	background-color: var(--text-primary);
-	border-radius: 20px;
+	border-radius: 30px;
+	text-align: center;
 }
 
 /*Footer Section*/
@@ -81,22 +83,26 @@ footer {
 	border-radius: 90px;
 	border: 1px solid var(--text-primary);
 	color: var(--text-primary);
-	padding: 5px;
+	padding: 7px;
 	margin: 0px 5px;
-	font-size: 0.7rem;
-	width: 25px;
-	height: 25px;
+	font-size: 0.9rem;
+	width: 30px;
+	height: 30px;
 }
 
 
 /*Media Queries*/
 @media screen and (min-width: 801px) {
+	body {
+		background-image: url("img/bg-desktop.svg");
+	}
+
 	.wrapper {
-		max-width: 1200px;
+		max-width: 1300px;
 	}
 
 	header, footer {
-	max-width: 1200px;
+	max-width: 1300px;
 	}
 
 	.landing-page {
@@ -105,11 +111,12 @@ footer {
 
 	.content__box {
 	text-align: left;
-	flex: 0 1 50%;
+	flex: 0 1 40%;
 	}
 
 	.content__box:first-child {
 	padding-right: 40px;
+	flex: 0 1 60%;
 	}
 
 	.button a {
@@ -126,5 +133,9 @@ footer {
 
 	footer {
 		justify-content: flex-end;
+	}
+
+	h1 {
+		font-size: 2.3rem;
 	}
 }
