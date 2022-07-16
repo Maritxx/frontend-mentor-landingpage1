@@ -6,18 +6,23 @@ body {
 	background-repeat: no-repeat;
 	background-position: center top;
 	font-family: var(--main-font);
+	padding: 50px;
 }
 
 .wrapper {
 	max-width: 550px;
 	width: 100%;
-	min-height: 100vh;
+	min-height: calc(100vh - 200px);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	margin: 0 auto;
-	padding: 50px;
+}
+
+header, footer {
+	height: 100px;
+	max-width: 550px;
 }
 
 
@@ -57,18 +62,29 @@ h1 {
 }
 
 /*Footer Section*/
-.fa-brands {
+footer {
+	margin: 0 auto;
+}
+
+.fa-brands, .fa-solid {
 	text-align: center;
 	border-radius: 90px;
 	border: 1px solid var(--text-primary);
-	color: var(--text-primary)
+	color: var(--text-primary);
 	padding: 5px;
 	margin: 0px 5px;
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 
 
 /*Media Queries*/
 @media screen and (min-width: 801px) {
+	.wrapper {
+		max-width: 1200px;
+		flex-direction: row;
+	}
 
+	header, footer {
+	max-width: 1200px;
+	}
 }
