@@ -68,6 +68,14 @@ header img {
 	background-color: var(--text-primary);
 	border-radius: 30px;
 	text-align: center;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.38);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.38);
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.38);
+}
+
+.button a:hover {
+	color: var(--text-primary);
+	background-color: var(--content-secondary);
 }
 
 /*Footer Section*/
@@ -88,6 +96,11 @@ footer {
 	font-size: 0.9rem;
 	width: 30px;
 	height: 30px;
+}
+
+.fa-brands:hover, .fa-solid:hover {
+	color: var(--content-secondary);
+	border: 1px solid var(--content-secondary);
 }
 
 
