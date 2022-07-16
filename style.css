@@ -1,1 +1,68 @@
+/*Global Styles*/
+body {
+	background-image: url("img/bg-mobile.svg");
+	background-color: var(--content-primary);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 100vh;
+	font-family: var(--main-font);
+}
 
+.wrapper {
+	max-width: 550px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+
+/*Font Styles*/
+h1 {
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: var(--text-primary);
+}
+
+.content__box p {
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--text-primary);
+	padding: 20px 0px;
+}
+
+
+/*Landing-page Section*/
+.content__box {
+	text-align: center;
+}
+
+.button a {
+	display: block;
+	width: 75%;
+	padding: 10px 0px;
+	font-family: var(--button-font);
+	font-weight: 400
+	color: var(--content-primary);
+	background-color: var(--text-primary);
+	border-radius: 20px;
+}
+
+/*Footer Section*/
+.socials-link__box a i {
+	text-align: center;
+	border-radius: 90px;
+	border: 1px solid var(--text-primary);
+	color: var(--text-primary)
+	padding: 5px;
+	margin: 0px 5px;
+	font-size: 1rem;
+}
+
+
+/*Media Queries*/
+@media screen and (min-width: 801px) {
+
+}
