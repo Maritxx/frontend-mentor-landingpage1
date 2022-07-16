@@ -6,7 +6,6 @@ body {
 	background-repeat: no-repeat;
 	background-position: center top;
 	font-family: var(--main-font);
-	padding: 50px;
 }
 
 .wrapper {
@@ -15,14 +14,14 @@ body {
 	min-height: calc(100vh - 200px);
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	flex-direction: column;
 	margin: 0 auto;
+	padding: 40px;
 }
 
 header, footer {
 	height: 100px;
 	max-width: 550px;
+	padding: 40px;
 }
 
 
@@ -41,6 +40,13 @@ h1 {
 }
 
 
+/*Header Section*/
+header img {
+	width: 35vw;
+	max-width: 200px;
+}
+
+
 /*Landing-page Section*/
 .content__box {
 	text-align: center;
@@ -53,6 +59,7 @@ h1 {
 .button a {
 	display: block;
 	width: 75%;
+	margin: 0 auto;
 	padding: 10px 0px;
 	font-family: var(--button-font);
 	font-weight: 400
@@ -63,7 +70,10 @@ h1 {
 
 /*Footer Section*/
 footer {
-	margin: 0 auto;
+	margin: 0 auto;	
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 .fa-brands, .fa-solid {
@@ -73,7 +83,9 @@ footer {
 	color: var(--text-primary);
 	padding: 5px;
 	margin: 0px 5px;
-	font-size: 1.5rem;
+	font-size: 0.7rem;
+	width: 25px;
+	height: 25px;
 }
 
 
@@ -81,7 +93,6 @@ footer {
 @media screen and (min-width: 801px) {
 	.wrapper {
 		max-width: 1200px;
-		flex-direction: row;
 	}
 
 	header, footer {
